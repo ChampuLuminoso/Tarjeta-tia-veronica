@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Cumpleaños, Tía</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-image: url('https://i.imgur.com/xeWY6NA.jpeg'); /* Fondo */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #2e2e2e;
+      text-align: center;
+      padding: 40px 20px;
+      overflow-x: hidden;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      max-width: 700px;
+      margin: auto;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #e60073;
+    }
+
+    img {
+      max-width: 90%;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .mensaje-nube {
+      background: #ffffffdd;
+      border-radius: 60% 60% 50% 50% / 60% 60% 40% 40%;
+      padding: 30px;
+      margin-top: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #333;
+      animation: flotar 6s ease-in-out infinite;
+    }
+
+    @keyframes flotar {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .icono {
+      font-size: 2em;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    .corazon {
+      position: fixed;
+      top: -50px;
+      font-size: 24px;
+      animation: caer 8s linear infinite;
+      opacity: 0.6;
+      z-index: 0;
+    }
+
+    @keyframes caer {
+      0% { transform: translateY(-50px) translateX(0); opacity: 0.6; }
+      100% { transform: translateY(100vh) translateX(30px); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Corazones flotantes -->
+  <div class="corazon" style="left: 10%;">💖</div>
+  <div class="corazon" style="left: 25%; animation-delay: 2s;">💖</div>
+  <div class="corazon" style="left: 40%; animation-delay: 4s;">💖</div>
+  <div class="corazon" style="left: 60%; animation-delay: 1s;">💖</div>
+  <div class="corazon" style="left: 80%; animation-delay: 3s;">💖</div>
+
+  <!-- Audio que se reproduce automáticamente -->
+  <audio autoplay loop>
+    <source src="musica.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML.
+  </audio>
+
+  <div class="card">
+    <div class="icono">🎂🎉</div>
+    <h1>Feliz Cumpleaños, Tía</h1>
+
+    <div class="mensaje-nube">
+      Tía querida,<br><br>
+
+      Feliz cumpleaños. Lamento no poder llamarte hoy, pero eso no significa que no esté pensando en ti y deseándote el mejor de los días.<br><br>
+
+      Aunque la distancia siempre ha estado presente, el cariño que te tengo ha sido inmenso, constante e incondicional.  
+      Quiero agradecerte profundamente por todo tu apoyo a lo largo del tiempo. Tu presencia, aún desde lejos, siempre ha sido un alivio y una fortaleza.<br><br>
+
+      Hoy te mando un fuerte abrazo, lleno de amor y gratitud. Espero de corazón que tengas un cumpleaños hermoso, rodeada de alegría y amor.<br><br>
+
+      Y de parte de toda la familia: que la vida te sonría en cada paso, que se cumplan todos tus deseos, y que sigas siendo esa persona especial que tanto queremos.<br><br>
+
+      ¡Feliz cumpleaños, tía!<br><br>
+
+      — Con cariño, tu sobrino programador 👨‍💻
+    </div>
+
+    <!-- Imagen decorativa -->
+    <img src="https://i.imgur.com/qrplkg0.jpeg" alt="Flores de cumpleaños">
+
+    <footer>
+      Hecho con amor, ternura, y unas cuantas líneas de código ❤️
+    </footer>
+  </div>
+</body>
+</html>

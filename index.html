@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Feliz Cumpleaños, Tía</title>
+  <link rel="icon" href="Pastel.png" type="image/jpeg">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Quicksand', sans-serif;
-      background-image: url('https://i.imgur.com/xeWY6NA.jpeg'); /* Fondo */
+      background-image: url('https://i.imgur.com/yqKXH0x.jpg'); /* Puedes cambiar el fondo */
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -70,10 +71,11 @@
       color: #777;
     }
 
-    .corazon {
+    .imagen-flotante {
       position: fixed;
-      top: -50px;
-      font-size: 24px;
+      top: -100px;
+      width: 50px;
+      height: auto;
       animation: caer 8s linear infinite;
       opacity: 0.6;
       z-index: 0;
@@ -86,19 +88,20 @@
   </style>
 </head>
 <body>
-  <!-- Corazones flotantes -->
-  <div class="corazon" style="left: 10%;">💖</div>
-  <div class="corazon" style="left: 25%; animation-delay: 2s;">💖</div>
-  <div class="corazon" style="left: 40%; animation-delay: 4s;">💖</div>
-  <div class="corazon" style="left: 60%; animation-delay: 1s;">💖</div>
-  <div class="corazon" style="left: 80%; animation-delay: 3s;">💖</div>
+  <!-- Imágenes flotantes -->
+  <img class="imagen-flotante" src="Iconocumple.png" style="left: 10%;" />
+  <img class="imagen-flotante" src="Iconocumple.jpg" style="left: 25%; animation-delay: 2s;" />
+  <img class="imagen-flotante" src="Iconocumple.jpg" style="left: 40%; animation-delay: 4s;" />
+  <img class="imagen-flotante" src="Iconocumple.jpg" style="left: 60%; animation-delay: 1s;" />
+  <img class="imagen-flotante" src="Iconocumple.jpg" style="left: 80%; animation-delay: 3s;" />
 
-  <!-- Audio que se reproduce automáticamente -->
+  <!-- Música automática -->
   <audio autoplay loop>
     <source src="musica.mp3" type="audio/mpeg">
     Tu navegador no soporta audio HTML.
   </audio>
 
+  <!-- Contenido principal -->
   <div class="card">
     <div class="icono">🎂🎉</div>
     <h1>Feliz Cumpleaños, Tía</h1>
